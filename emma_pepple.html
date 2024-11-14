@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAS - Project Sample Code block</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-screen min-h-full flex flex-col">
+    <header class="w-screen py-4">
+        <div class="container mx-auto mb-4">
+            <img src="/images/logo.png" alt="logo" />
+        </div>
+        <div class="w-screen bg-[#F93131] h-16"></div>
+    </header>
+    <main class="w-screen flex flex-col items-center justify-center min-h-[calc(100vh_-_162px)]">
+        <div class="flex flex-col space-y-6 items-center max-w-xl w-screen">
+            <h1 class="flex w-fit text-xl lg:text-2xl font-semibold">Login To</h1>
+
+            <div class="card shadow-xl w-full min-h-96">
+                <div class="card-body w-full">
+                    <label class="form-control w-full">
+                        <div class="label">
+                            <span class="label-text">Email</span>
+                        </div>
+                        <input type="text" placeholder="name@domain.com"
+                            class="input input-bordered w-full rounded-lg" />
+                    </label>
+                    <label class="form-control w-full relative">
+                        <div class="label">
+                            <span class="label-text">Password</span>
+                            <a href="/" class="label-text-alt text-blue-400">Forgot your Password?</a>
+                        </div>
+                        <input type="text" placeholder="*****" class="input input-bordered w-full rounded-lg" />
+                        <button type="button" class=" absolute top-12 right-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        </button>
+
+                    </label>
+
+                    <div class="divider my-12 text--sm font-semibold">OR</div>
+
+                    <button type="button" title="signin with facebook"
+                        class="btn rounded-lg btn-outline w-full flex items-center space-x-4">
+                        <img src="/images/facebook-color-svgrepo-com.svg" alt="" class="rounded-full objct-cover w-6 h-6">
+                        <span class="flex w-fit">Sign in with facebook</span>
+                    </button>
+                    <button type="button" title="signin with google"
+                        class="btn rounded-lg btn-outline w-full flex items-center space-x-4">
+                        <img src="/images/google-color-svgrepo-com.svg" alt="" class="rounded-full objct-cover w-6 h-6">
+                        <span class="flex w-fit">Sign in with google</span>
+                    </button>
+
+                    <div class="pt-8 space-y-4">
+                        <label class="label cursor-pointer w-fit space-x-4">
+                            <input type="checkbox" checked="checked" class="checkbox rounded" />
+                            <span class="label-text">Remember me</span>
+                        </label>
+                        <button type="button" title="signin with google"
+                            class="btn bg-[#F93131] text-white rounded-lg btn-red w-full flex items-center space-x-4">
+                            <span class="flex w-fit">Login</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
